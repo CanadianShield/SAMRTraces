@@ -144,5 +144,46 @@ Details [SamrSetInformationUser2](https://docs.microsoft.com/en-us/openspecs/win
 |UserInformationClass|USER_INFORMATION_CLASS 0x20|
 |Buffer|PSAMPR_USER_INFO_BUFFER structure|
     
-The `UserInformationClass` value seems to be matching to `UserInternal8Information`.
+The `UserInformationClass` value seems to be matching to `UserInternal8Information` which might be the encrypted password.
 </details>
+
+<details><summary>14. ⬅️ Receive SamrSetInformationUser2</summary>
+
+|Parameter field|Parameter value|
+|--|--|
+|Status|0|
+</details>
+
+<details><summary>14. ➡️ Send SamrCloseHandle</summary>
+
+Details [SamrCloseHandle](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-samr/55d134df-e257-48ad-8afa-cb2ca45cd3cc).
+    
+|Parameter field|Parameter value|
+|--|--|
+|SamHandle|samHandle|
+</details>
+
+<details><summary>15. ⬅️ Receive SamrCloseHandle</summary>
+
+|Parameter field|Parameter value|
+|--|--|
+|SamHandle|{00000000-00000000-0000-0000-0000-000000000000}|
+|Status|0|
+</details>
+
+
+<details><summary>16. ➡️ Send SamrCloseHandle</summary>
+
+|Parameter field|Parameter value|
+|--|--|
+|SamHandle|samHandle|
+</details>
+
+<details><summary>17. ⬅️ Receive SamrCloseHandle</summary>
+
+|Parameter field|Parameter value|
+|--|--|
+|SamHandle|{00000000-00000000-0000-0000-0000-000000000000}|
+|Status|0|
+</details>
+
