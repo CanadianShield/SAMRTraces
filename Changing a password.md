@@ -1,8 +1,10 @@
 # Changing an account's password
 
 The following sequence of methods and parameters changes the password of a user called "testuser" on a domain controller "secdc02", a domain name of "piesec.ca" (NetBIOS name "piesec"). The relative identifier of the user is 1604.
+
 Here is the command used to trigger this flow: `net user TestUser Pa$$w0rd /domain`.
-It actually triggers more operations than what is represented here but the operations priors that are only to gather informations such as the relative identifier (via [SamrQueryInformationUser](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-samr/4ad8d54c-0d5a-4d5a-9e9a-1bc9ee008d47)), not to change the password. Therefore, only the operations with the handles changing the password are represented here.
+
+It actually triggers more operations than what is represented here but the operations prior what is here are only to gather informations such as the relative identifier (via [SamrQueryInformationUser](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-samr/4ad8d54c-0d5a-4d5a-9e9a-1bc9ee008d47)), not to change the password. Therefore, only the operations with the handles changing the password are represented here.
 
 Note that the field `Status` refers to the `ReturnValue` on a network trace. 
 
