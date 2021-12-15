@@ -4,16 +4,21 @@ This is as-is taken from from [\[MS-SAMR\]](https://docs.microsoft.com/en-us/ope
 
 The following sequence of methods and parameters creates a user account given a network address of "msdc-1", a domain name of "ms", and a user name of "testuser".
 
-1️⃣ ➡️ **Send SamrConnect**
-
+<details><summary>1. ➡️ Send SamrConnect</summary>
+    
 |Parameter field|Parameter value|
 |--|--|
 |ServerName|msdc-1|
 |DesiredAccess|0x31|
+</details>
 
-2️⃣ ⬅️ **Receive SamrConnect**
+
+
+
+<details><summary>2. ⬅️ Receive SamrConnect</summary>
 
 |Parameter field|Parameter value|
 |--|--|
 |Status|0|
-|serverHandle|\[implementation-specific value\] serverHandle|
+|ServerHandle|\[implementation-specific value\] serverHandle|
+</details>
