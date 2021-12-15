@@ -1,4 +1,4 @@
-# Creating a user account
+# Creating a group
 
 The following sequence of methods and parameters creates a group on a domain controller "secdc02", a domain name of "piesec", and a group name of "TestGroup". Here is the command used to trigger this flow: `net group TestGroup /add /domain`.
 
