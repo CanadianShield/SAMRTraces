@@ -67,8 +67,6 @@ Details [SamrLookupDomainInSamServer](https://docs.microsoft.com/en-us/openspecs
 |--|--|
 |DomainId|\[implementation-specific SID\]. For example: S-1-5-21-776355648-152374955-3729610662|
 |Status|0|
-    
-The `Buffer` structure contains a sub structure `SamprEnumerationBuffer` listing the name of the domain as well as the container where the group will be created.
 </details>
 
 <details><summary>7. ➡️ Send SamrOpenDomain</summary>
