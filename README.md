@@ -4,11 +4,11 @@ This repository is meant as a continuation of the [Protocol Examples](https://do
 
 **Security Account Manager Remote Protocol** is used by the operating system during many harmless operations. However it can also be used by a malicious actors to perform reconaissance tasks. The repository gives examples of different operations and their associated sequences when SAM-R is used by the OS or potentially by a malicious actor.
 
-🔎 [Creating a user account](/Creating%20a%20user%20account.md) (example from [\[MS-SAMR\]](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-samr/3d8e23d8-d9df-481f-83b3-9175f980294c))
+🔎 [Creating a user account](/Creating%20a%20user%20account.md) (example from [\[MS-SAMR\]](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-samr/3d8e23d8-d9df-481f-83b3-9175f980294c)) [^1]
 
-🔎 [Enabling a user account](/Enabling%20a%20user%20account.md) (example from [\[MS-SAMR\]](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-samr/bf8cfb76-24f7-42de-a95f-e5b9ec7435d0))
+🔎 [Enabling a user account](/Enabling%20a%20user%20account.md) (example from [\[MS-SAMR\]](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-samr/bf8cfb76-24f7-42de-a95f-e5b9ec7435d0)) [^1]
 
-🔎 Creating a group
+🔎 [Creating a group]
 
 🔎 Changing an account's password
 
@@ -23,13 +23,4 @@ This repository is meant as a continuation of the [Protocol Examples](https://do
 🔎 Enumerating all groups
 
 
-
-
-
-
-
-
-
-➡️ Send 
-
-⬅️ Receive
+[^1]: These examples are not the only possible ways to interact with a SamServer to perform those actions.
