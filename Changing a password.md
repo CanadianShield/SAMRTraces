@@ -71,65 +71,44 @@ Details [SamrOpenDomain](https://docs.microsoft.com/en-us/openspecs/windows_prot
 |Status|0|
 </details>
 
-<details><summary>9. ➡️ Send SamrCreateGroupInDomain</summary>
+<details><summary>7. ➡️ Send SamrLookupNamesInDomain</summary>
 
-Details [SamrCreateGroupInDomain](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-samr/175c1cf9-4fa2-4837-9e5b-bb1f0f950bee).
+Details [SamrLookupNamesInDomain](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-samr/d91271c6-7b2e-4194-9927-8fabfa429f90).
     
 |Parameter field|Parameter value|
 |--|--|
 |DomainHandle|domainHandle|
-|Name|TestGroup|
-|DesiredAccess|0x10002|
-    
-`DesiredAccess` mask corresponds to `SpecificRights: GroupWriteAccount` and `AccessRights/StandarRights: Delete`.
+|Count|1|
+|Names|One entrie: testuser|
 </details>
 
-<details><summary>10. ⬅️ Receive SamrCreateGroupInDomain</summary>
+<details><summary>8. ⬅️ Receive SamrLookupNamesInDomain</summary>
 
 |Parameter field|Parameter value|
 |--|--|
-|GroupHandle|\[implementation-specific value\] groupHandle|
-|RelativeId|1603|
+|RelativeIds|RID Count: 1|
+|Use|Count: 1|
 |Status|0|
     
- The `RelativeId` is the object RID.
+In the `Use` field, the element 0x1 corresponds to `SidTypeUser - User account`.
 </details>
 
-<details><summary>11. ➡️ Send SamrSetInformationGroup</summary>
+<details><summary>9. ➡️ Send SamrQueryInformationUser</summary>
 
-Details [SamrSetInformationGroup](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-samr/e66db19f-600a-481b-bc4e-23953433255d).
+Details [SamrQueryInformationUser](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-samr/e66db19f-600a-481b-bc4e-23953433255d).
     
 |Parameter field|Parameter value|
 |--|--|
-|GroupHandle|groupHandle|
-|GroupInformationClass|0x4|
-|Buffer GroupInformationClass|[SAMPR_GROUP_INFO_BUFFER](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-samr/a37ef739-9b21-47a7-89b4-d237dd6491f3) structure|
-    
-`DesiredAccess` mask corresponds to `SpecificRights: GroupWriteAccount` and `AccessRights/StandarRights: Delete`.
+|UserHandle|\[implementation-specific value\] userHandle|
+|UserInformationClass|0x10|
+
+`UserInformationClass` enumeration is described here: [USER_INFORMATION_CLASS](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-samr/6b0dff90-5ac0-429a-93aa-150334adabf6). `0x10` is `UserControlInformation`.
 </details>
 
-<details><summary>12. ⬅️ Receive SamrCreateGroupInDomain</summary>
+<details><summary>10. ⬅️ Receive SamrQueryInformationUser</summary>
 
 |Parameter field|Parameter value|
 |--|--|
-|Status|0|
-    
- The `RelativeId` is the object RID.
-</details>
-
-<details><summary>13. ➡️ Send SamrCloseHandle</summary>
-
-Details [SamrCloseHandle](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-samr/55d134df-e257-48ad-8afa-cb2ca45cd3cc).
-    
-|Parameter field|Parameter value|
-|--|--|
-|SamHandle|samHandle|
-</details>
-
-<details><summary>14. ⬅️ Receive SamrCloseHandle</summary>
-
-|Parameter field|Parameter value|
-|--|--|
-|SamHandle|{00000000-00000000-0000-0000-0000-000000000000}|
+|Buffer|[SAMPR_USER_INFO_BUFFER](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-samr/9496c26e-490b-4e76-827f-2695fc216f35) structure|
 |Status|0|
 </details>
