@@ -1,6 +1,6 @@
 # Enabling a user account
 
-This is as-is taken from from [\[MS-SAMR\]](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-samr/bf8cfb76-24f7-42de-a95f-e5b9ec7435d0).
+This is taken from [\[MS-SAMR\]](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-samr/bf8cfb76-24f7-42de-a95f-e5b9ec7435d0).
 
 The following sequence of methods and parameters enables the user account created in the previous example. This is performed on the machine with the network address of "msdc-1", a domain name of "ms", and a user name of "testuser" with Relative ID = 2810.
 
