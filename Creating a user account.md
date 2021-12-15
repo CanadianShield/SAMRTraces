@@ -88,25 +88,46 @@ Details [SamrCreateUser2InDomain](https://docs.microsoft.com/en-us/openspecs/win
 <details><summary>9. ➡️ Send SamrCloseHandle</summary>
 
 Details [SamrCloseHandle](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-samr/55d134df-e257-48ad-8afa-cb2ca45cd3cc).
-  
+
+|Parameter field|Parameter value|
+|--|--|
+|Handle|userHandle|
 </details>
 
 <details><summary>10. ⬅️ Receive SamrCloseHandle</summary>
-
+    
+|Parameter field|Parameter value|
+|--|--|
+|Status|0|
+|Handle|0|
 </details>
 
 <details><summary>11. ➡️ Send SamrCloseHandle</summary>
 
+|Parameter field|Parameter value|
+|--|--|
+|Handle|domainHandle|
 </details>
 
 <details><summary>12. ⬅️ Receive SamrCloseHandle</summary>
 
+|Parameter field|Parameter value|
+|--|--|
+|Status|0|
+|Handle|0|
 </details>
 
 <details><summary>13. ➡️ Send SamrCloseHandle</summary>
 
+|Parameter field|Parameter value|
+|--|--|
+|Handle|serverHandle|
 </details>
 
 <details><summary>14. ⬅️ Receive SamrCloseHandle</summary>
 
+|Parameter field|Parameter value|
+|--|--|
+|Status|0|
+|Handle|0|
 </details>
