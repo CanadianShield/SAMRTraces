@@ -156,7 +156,7 @@ The `UserInformationClass` value seems to be matching to `UserInternal8Informati
 |Status|0|
 </details>
 
-<details><summary>14. ➡️ Send SamrCloseHandle</summary>
+<details><summary>15. ➡️ Send SamrCloseHandle</summary>
 
 Details [SamrCloseHandle](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-samr/55d134df-e257-48ad-8afa-cb2ca45cd3cc).
     
@@ -165,7 +165,7 @@ Details [SamrCloseHandle](https://docs.microsoft.com/en-us/openspecs/windows_pro
 |SamHandle|samHandle|
 </details>
 
-<details><summary>15. ⬅️ Receive SamrCloseHandle</summary>
+<details><summary>16. ⬅️ Receive SamrCloseHandle</summary>
 
 |Parameter field|Parameter value|
 |--|--|
@@ -174,14 +174,14 @@ Details [SamrCloseHandle](https://docs.microsoft.com/en-us/openspecs/windows_pro
 </details>
 
 
-<details><summary>16. ➡️ Send SamrCloseHandle</summary>
+<details><summary>17. ➡️ Send SamrCloseHandle</summary>
 
 |Parameter field|Parameter value|
 |--|--|
 |SamHandle|samHandle|
 </details>
 
-<details><summary>17. ⬅️ Receive SamrCloseHandle</summary>
+<details><summary>18. ⬅️ Receive SamrCloseHandle</summary>
 
 |Parameter field|Parameter value|
 |--|--|
