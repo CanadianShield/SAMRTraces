@@ -112,3 +112,37 @@ Details [SamrQueryInformationUser](https://docs.microsoft.com/en-us/openspecs/wi
 |Buffer|[SAMPR_USER_INFO_BUFFER](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-samr/9496c26e-490b-4e76-827f-2695fc216f35) structure|
 |Status|0|
 </details>
+
+<details><summary>11. ➡️ Send SamrGetUserDomainPasswordInformation</summary>
+
+Details [SamrGetUserDomainPasswordInformation](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-samr/db4bedfe-4651-4743-9381-d74c3ad8c41c).
+    
+|Parameter field|Parameter value|
+|--|--|
+|UserHandle|\[implementation-specific value\] userHandle|
+    
+The `SamrGetUserDomainPasswordInformation` method obtains select password policy information (without requiring a domain handle).
+</details>
+
+<details><summary>12. ⬅️ Receive SamrGetUserDomainPasswordInformation</summary>
+
+|Parameter field|Parameter value|
+|--|--|
+|PasswordInformation|PUSER_DOMAIN_PASSWORD_INFORMATION|
+|Status|0|
+
+`PasswordInformation` contains `MinPasswordLength` and the `PasswordProperties` attribute.
+</details>
+
+<details><summary>13. ➡️ Send SamrSetInformationUser2</summary>
+
+Details [SamrSetInformationUser2](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-samr/99ee9f39-43e8-4bba-ac3a-82e0c0e0699e).
+    
+|Parameter field|Parameter value|
+|--|--|
+|UserHandle|\[implementation-specific value\] userHandle|
+|UserInformationClass|USER_INFORMATION_CLASS 0x20|
+|Buffer|PSAMPR_USER_INFO_BUFFER structure|
+    
+The `UserInformationClass` value seems to be matching to `UserInternal8Information`.
+</details>
