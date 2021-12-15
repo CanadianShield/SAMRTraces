@@ -8,9 +8,9 @@ This repository is meant as a continuation of the [Protocol Examples](https://do
 
 🔎 [Enabling a user account](/Enabling%20a%20user%20account.md) (example from [\[MS-SAMR\]](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-samr/bf8cfb76-24f7-42de-a95f-e5b9ec7435d0)) [^1]
 
-🔎 [Creating a group]
+🔎 [Creating a group](/Creating%20a%20group.md)
 
-🔎 Changing an account's password
+🔎 [Changing an account's password](/Changing%20a%20password.md)
 
 🔎 Querying a user account's information
 
