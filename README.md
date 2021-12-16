@@ -18,9 +18,9 @@ This repository is meant as a continuation of the [Protocol Examples](https://do
 
 🔎 Querying the domain's account policy
 
-🔎 Enumerating all user accounts
+🔎 [Enumerating all user accounts](/Enumerating%20all%20user%20accounts.md)
 
-🔎 Enumerating all groups
+🔎 [Enumerating all groups](/Enumerating%20all%20groups.md)
 
 
 [^1]: These examples are not the only possible ways to interact with a SamServer to perform those actions.
