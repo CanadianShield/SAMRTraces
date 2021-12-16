@@ -10,7 +10,7 @@ Details [SamrConnect5](https://docs.microsoft.com/en-us/openspecs/windows_protoc
     
 |Parameter field|Parameter value|
 |--|--|
-|ServerName|msdc-1|
+|ServerName|secdc02|
 |DesiredAccess|0x31|
 |InVersion|1|
 |InRevisionInfo|[SAMPR_REVISION_INFO_V1](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-samr/963e60b5-9233-4669-b8a8-85bf4f0806dc) structure|
