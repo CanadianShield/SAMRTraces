@@ -8,7 +8,7 @@ This repository is meant as a continuation of the [Protocol Examples](https://do
 
 SAM-R on the network can just be the result of a benign script or application call.
 - System.DirectoryServices.AccountManagement wraps ADSI and can lead to SAM-R call to a domain controller.
-- ADSI and the WinNT provider also can lead to SAM-R calls (example: in PowerShell `[ADSI]"WinNT://contoso.com/Bob,user"` will generate multples SAM-R calls).
+- ADSI and the WinNT provider also can lead to SAM-R calls (example: in PowerShell `[ADSI]"WinNT://contoso.com/Bob,user"` will generate multiples SAM-R calls).
 - The `net.exe` (and its friend `net1.exe`) will use SAM-R against a domain controller (example: `net users /domain`).
 
 ## Examples of SAM-R flows
