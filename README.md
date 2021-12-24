@@ -1,6 +1,6 @@
 # SAM-R Traces
 
-This repository is meant as a continuation of the [Protocol Examples](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-samr/eed8ab3c-839c-49e9-a524-703ed733f949) section of \[MS-SAMR\]. The intention is to give the examples of the protocol flow we would see in network traces or some other advanced debugging when common SAM-R operations are performed.
+This repository is meant as a continuation of the [Protocol Examples](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-samr/eed8ab3c-839c-49e9-a524-703ed733f949) section of \[MS-SAMR\]. The intention is to give the examples of the protocol flow we would see in network traces or some other advanced debugging when common SAM-R operations are performed **against a domain controller**.
 
 **Security Account Manager Remote Protocol** is used by the operating system during many harmless operations. However it can also be used by a malicious actors to perform reconaissance tasks. The repository gives examples of different operations and their associated sequences when SAM-R is used by the OS or potentially by a malicious actor.
 
