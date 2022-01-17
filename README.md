@@ -13,7 +13,7 @@ SAM-R on the network can just be the result of a benign script or application ca
 
 ## Examples of SAM-R flows
 
-🔎 [Creating a user account](/Creating%20a%20user%20account.md) (example from [\[MS-SAMR\]](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-samr/3d8e23d8-d9df-481f-83b3-9175f980294c)) [^1]
+🔎 [Creating a user account](/Creating%20a%20user%20account.md) (example from [\[MS-SAMR\]](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-samr/3d8e23d8-d9df-481f-83b3-9175f980294c) [^1] other example available in [\[MS-ADOD\]](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-adod/5535175f-bf6a-44f0-979d-93ff6db7c65c)). 
 
 🔎 [Enabling a user account](/Enabling%20a%20user%20account.md) (example from [\[MS-SAMR\]](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-samr/bf8cfb76-24f7-42de-a95f-e5b9ec7435d0)) [^1]
 
@@ -30,9 +30,5 @@ SAM-R on the network can just be the result of a benign script or application ca
 🔎 [Enumerating all user accounts](/Enumerating%20all%20user%20accounts.md)
 
 🔎 [Enumerating all groups](/Enumerating%20all%20groups.md)
-
-## Other examples
-
-🔎 [Provision a User Account by Using the SAMR Protocol](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-adod/5535175f-bf6a-44f0-979d-93ff6db7c65c) from \[MS-ADOD\]: Active Directory Protocols Overview.
 
 [^1]: These examples are not the only possible ways to interact with a SamServer to perform those actions.
