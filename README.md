@@ -31,5 +31,8 @@ SAM-R on the network can just be the result of a benign script or application ca
 
 🔎 [Enumerating all groups](/Enumerating%20all%20groups.md)
 
+## Other examples
+
+🔎 [Provision a User Account by Using the SAMR Protocol](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-adod/5535175f-bf6a-44f0-979d-93ff6db7c65c) from \[MS-ADOD\]: Active Directory Protocols Overview.
 
 [^1]: These examples are not the only possible ways to interact with a SamServer to perform those actions.
